@@ -34,10 +34,7 @@ while(poltronas != 40):
                 elif(Gabarito[i][j] == 'X'):
                     print('Lugar Já ocupado!')
                     break
-            else:
-                print('Lugar não Encontrado.')
-                break
-
+                
     choice = input('Deseja Adicionar mais passageiros? (S/N)').upper()
     if (choice == 'N'):
         break
