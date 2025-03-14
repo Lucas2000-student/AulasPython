@@ -13,16 +13,20 @@ for i in range(10):
 
 poltronas = 0
 
-while(poltronas != 40):
 
+while(poltronas != 40):
+    caso = 0
     print('\nBem vindo ao Ônibus de Excursão Charlie B.Jr há Santos\n')
 
     for i in range (10):
         print(Gabarito[i])
     
+    vezes = 0
+    
     lugar = input('\nEscreva o local desejado: ').upper()
     for i in range (10):
         for j in range(4):
+            vezes = vezes + 1
             if(Gabarito[i][j] == lugar):
                 if(Gabarito[i][j] != 'X'):
                     Gabarito[i][j] = 'X'
@@ -30,12 +34,17 @@ while(poltronas != 40):
                     Bus[i][j] = nome
                     print('Lugar Reservado!')
                     poltronas = poltronas + 1
+                    caso = 1
                     break
-                elif(Gabarito[i][j] == 'X'):
-                    print('Lugar Já ocupado!')
-                    break
-                
-    choice = input('Deseja Adicionar mais passageiros? (S/N)').upper()
+            elif(vezes == 40):
+                print(f'O Acento "{lugar}" Não existe ou já está ocupado.' )
+                caso = 2
+
+    if(caso == 1):
+        choice = input('\nDeseja Adicionar mais passageiros? (S/N)').upper()
+    elif(caso == 2):
+        choice = input('\nDeseja tentar novamemnte? (S/N)').upper()
+    
     if (choice == 'N'):
         break
 
