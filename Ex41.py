@@ -41,9 +41,9 @@ while(poltronas != 40):
                 caso = 2
 
     if(caso == 1):
-        choice = input('\nDeseja Adicionar mais passageiros? (S/N)').upper()
+        choice = input('\nDeseja Adicionar mais passageiros? (S/N): ').upper()
     elif(caso == 2):
-        choice = input('\nDeseja tentar novamemnte? (S/N)').upper()
+        choice = input('\nDeseja tentar novamemnte? (S/N): ').upper()
     
     if (choice == 'N'):
         break
