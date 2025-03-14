@@ -41,7 +41,7 @@ while(True):
                 print(f'\nEste valor se encontra na linha {i} coluna {j}\n')
                 true = 1
     if(true == 0):
-        print('\nValor não encontrado na Matriz!\n')
+        print(f'\n O valor {valor} não encontrado na Matriz!\n')
     choice = input('Deseja Continuar? (Y/N): ').upper()
     if (choice == 'N'):
         break
