@@ -6,7 +6,7 @@ i = 1
 while(i <= 5):
     nome = input(f'Digite o nome do {i}° produto: ')
     preco = float(input('Digite o valor do produto: '))
-    quant = int(input('Digite a quantidade de produtos'))
+    quant = int(input('Digite a quantidade de produtos: '))
     total = preco * quant
     Produto = {'nome': nome, 'preco':preco, 'quant': quant, 'total': total}
     Produtos.append(Produto)
