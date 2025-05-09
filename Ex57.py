@@ -10,4 +10,3 @@ if response.status_code == 200:
     print(f"Seguidores: {dados['followers']}")
 else:
     print("Usuário não encontrado")
-    
